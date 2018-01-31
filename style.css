@@ -1,0 +1,74 @@
+/* ADD YOUR CSS STYLES BELOW */
+body {
+  font-size: 20px;
+  background: blue;
+}
+
+img {
+  display: block;
+}
+
+.container {
+}
+
+.box {
+  background: white;
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+  position: relative;
+  float: left;
+  cursor: pointer;
+}
+
+.box:hover .title {
+  display: block;
+}
+
+.box .title {
+  width: 100px;
+  height: 100px;
+  background: orange;
+  color: pink;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  margin-top: 10px;
+  display: none;
+}
+
+
+/* DON'T DELETE THIS */
+
+html {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+*,*:before,*:after {
+  box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+/* Clear Float */
+
+.cf:before,.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
